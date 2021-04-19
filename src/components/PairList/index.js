@@ -23,6 +23,30 @@ const PageButtons = styled.div`
   justify-content: center;
   margin-top: 2em;
   margin-bottom: 0.5em;
+`
+
+const Arrow = styled.div`
+  color: ${({ theme }) => theme.primary1};
+  opacity: ${(props) => (props.faded ? 0.3 : 1)};
+  padding: 0 20px;
+  user-select: none;
+  :hover {
+    cursor: pointer;
+  }
+`
+
+const List = styled(Box)`
+  -webkit-overflow-scrolling: touch;
+`
+
+const DashGrid = styled.div`
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 100px 1fr 1fr;
+  grid-template-areas: 'name liq vol';
+  padding: 0 1.125rem;
+
+  > * {
     justify-content: flex-end;
 
     :first-child {
