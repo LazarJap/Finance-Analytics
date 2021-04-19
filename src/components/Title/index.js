@@ -7,6 +7,7 @@ import Link from '../Link'
 import { RowFixed } from '../Row'
 import Logo from '../../assets/logo.png'
 import Wordmark from '../../assets/wordmark.png'
+import Logo1 from '../../assets/logo1.jpg'
 
 const TitleWrapper = styled.div`
   text-decoration: none;
@@ -33,9 +34,9 @@ export default function Title() {
       <Flex alignItems="center">
         <RowFixed>
           <UniIcon id="link" onClick={() => history.push('/')}>
-            <img width={'24px'} src={Logo} alt="logo" />
+            <img width={'34px'} src={Logo1} alt="logo" />
           </UniIcon>
-          <img width={'84px'} style={{ marginLeft: '8px', marginTop: '0px' }} src={Wordmark} alt="logo" />
+          <img width={'84px'} style={{ marginLeft: '8px', marginTop: '0px' }} src={Logo1} alt="logo" />
         </RowFixed>
       </Flex>
     </TitleWrapper>
